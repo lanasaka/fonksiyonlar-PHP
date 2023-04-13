@@ -1,0 +1,17 @@
+function drawTriangle($numRows) {
+    // Satır sayısı sıfırdan büyük olduğu sürece döngüye gir
+    for ($i = 1; $i <= $numRows; $i++) {
+        // Her satırın başına bir boşluk ekle
+        for ($j = 1; $j <= $numRows - $i; $j++) {
+            echo " ";
+        }
+        // Satırın kalan kısmını * karakteriyle doldur
+        $k = 1;
+        while ($k <= $i) {
+            echo "* ";
+            $k++;
+        }
+        // Satırın sonuna bir satır atlama karakteri ekle
+        echo "\n";
+    }
+}
